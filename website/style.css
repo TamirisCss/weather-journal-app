@@ -1,0 +1,197 @@
+:root {
+    --bg-Light-Color: #9CB4DB;
+    --bg-veryLight-Color: #C2DADE;
+    --bg-transparency: rgba(255,255,255,0.3);
+
+    --white: #ffffff;
+    --black: #000000;
+    --black-transparency: rgba(0, 0, 0, 0.3);
+
+
+    --button-Light-color: #667fb4;
+    --button-Dark-color: #3b4a6b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(var(--bg-Light-Color), var(--bg-veryLight-Color));
+}
+
+.app{
+    display: flex;
+    background-image: linear-gradient(var(--bg-Light-Color), var(--bg-veryLight-Color));
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media only screen and (min-width: 750px) {
+    .app {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .app {
+        flex-direction: column;
+        margin: 0 1em;
+    }
+}
+
+.headline {
+    color: var(--white);
+    font-size: 2.1em;
+    margin-bottom: 1em;
+}
+@media only screen and (max-width: 750px) {
+    .headline {
+        margin-top: 1em;
+    }
+}
+
+.holder {
+    margin-bottom: 2em;
+}
+
+label{
+    color: var(--white);
+    display:block;
+    font-size: 1.5em;
+    margin-bottom: .30em;
+}
+
+input{
+    display:block;
+    background-color: var(--bg-transparency);
+    height: 50px;
+    color: var(--black-transparency);
+    width: 400px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding-left: 10px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+@media only screen and (max-width: 750px) {
+    input {
+        width: 350px;
+    }
+    
+}
+
+textarea{
+    background-color: var(--bg-transparency);
+    color: var(--black-transparency);
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+@media only screen and (max-width: 750px) {
+    textarea {
+        width: 350px;
+    }
+    
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to right, var(--button-Light-color), var(--button-Dark-color));
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    display: block;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: .80em;
+}
+button:hover {
+    background-image: linear-gradient(to right, var(--button-Dark-color), var(--button-Light-color));
+}
+
+.entry {
+    background-color: var(--bg-transparency);
+    min-width: 250px;
+    height: 500px;
+    overflow: scroll;
+    padding: .50em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 750px) {
+    .entry {
+        margin-bottom: 2em;
+        width: 350px;
+    }
+}
+
+.title{
+    color: var(--black-transparency);
+    font-weight: 400;
+    margin-bottom: 1em;
+
+}
+
+.entryHolder{
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid var(--black-transparency);
+}
+@media only screen and (max-width: 750px) {
+    .entryHolder {
+        width: 300px;
+    }
+}
+
+.city {
+    font-size: 1.4em;
+    color: var(--button-Dark-color);
+    margin-bottom: .10em;
+}
+
+.date,
+.temp {
+    color: var(--black);
+}
+.content {
+    color: var(--black-transparency);
+    margin-bottom: 1em;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: var(--black-transparency); 
+    font-family: 'Montserrat', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: var(--black-transparency); 
+    font-family: 'Montserrat', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: var(--black-transparency); 
+    font-family: 'Montserrat', sans-serif;
+
+} 
