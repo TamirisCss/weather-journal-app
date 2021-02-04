@@ -3,6 +3,9 @@
 to run the app: 
 
 ```
+npm istall express
+npm istall body-parser
+npm install cors
 node server.js
 ```
 
