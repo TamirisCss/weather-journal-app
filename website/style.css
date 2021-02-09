@@ -164,6 +164,11 @@ button:hover {
 .temp {
     color: var(--black);
 }
+
+.icon {
+    width: 60px;
+}
+
 .content {
     color: var(--black-transparency);
     margin-bottom: 1em;

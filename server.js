@@ -38,6 +38,7 @@ function listening() {
 app.post('/add', (req,res) => {
   res.send('POST received');
   addData(req.body)
+  console.log(req.body)
 });
 
 // Adds post content to the projectData list

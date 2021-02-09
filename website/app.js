@@ -16,10 +16,13 @@ generate.addEventListener('click', event => {
         .then(json => {
             const body = {}
             body.temp = json.main.temp
+            body.icon = json.weather[0].icon
             body.date = newDate
             body.content = feelings
             body.city = city
+            console.log(json);
             return postData(body)
+
         })
         .then(response => {
             updateData()
@@ -69,22 +72,26 @@ const updateData = async () => {
                 const date = document.createElement('div');
                 const temp = document.createElement('div');
                 const content = document.createElement('div');
+                const icon = document.createElement('img');
 
                 entryHolder.classList.add('entryHolder');
                 city.classList.add('city');
                 date.classList.add('date');
                 temp.classList.add('temp');
+                icon.classList.add('icon');
                 content.classList.add('content');
 
                 city.innerHTML = entry.city;
                 date.innerHTML = entry.date;
                 temp.innerHTML = `${entry.temp} °F`;
+                icon.setAttribute('src', `http://openweathermap.org/img/wn/${entry.icon}@2x.png`)
                 content.innerHTML = entry.content;
 
                 list.appendChild(entryHolder);
                 entryHolder.appendChild(city);
                 entryHolder.appendChild(date);
                 entryHolder.appendChild(temp);
+                entryHolder.appendChild(icon);
                 entryHolder.appendChild(content);
             } 
         })
