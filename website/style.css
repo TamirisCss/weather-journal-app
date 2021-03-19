@@ -20,7 +20,7 @@
 
 body{
     font-weight: normal;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(var(--bg-Light-Color), var(--bg-veryLight-Color));
 }
 
