@@ -1,15 +1,17 @@
-## Udacity project
-# Travel-app
+Udacity project
+# weather-journal-app
 
 to run the app: 
 
 ```
-npm start
-
+npm istall express
+npm istall body-parser
+npm install cors
+node server.js
 ```
 
 the access on localhost:8000
 
 ## Technologies used:
-* 
-* 
+* JavaScript
+* node express
