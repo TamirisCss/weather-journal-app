@@ -1,11 +1,13 @@
-Udacity project
-# weather-journal-app
+# weather-journal-app :cloud: :sunny: :snowflake:
 
-to run the app: 
+## Preview
+![screenshot](/screenshot.png)
+
+## to run the app
 
 ```
-npm istall express
-npm istall body-parser
+npm install express
+npm install body-parser
 npm install cors
 node server.js
 ```
@@ -15,3 +17,5 @@ the access on localhost:8000
 ## Technologies used:
 * JavaScript
 * node express
+
+### Project of Udacity Frontend Developer Nanodegree.
