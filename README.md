@@ -18,4 +18,4 @@ the access on localhost:8000
 * JavaScript
 * node express
 
-### Project of Udacity Frontend Developer Nanodegree.
+### Project of Udacity Frontend Web Developer Nanodegree.
